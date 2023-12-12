@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company</title>
+    <style>
+        header {
+            background-color: cadetblue;
+            text-align: center;
+            padding: 10px;
+            margin-top: 0%;
+        }
+        img{
+            position:absolute;
+            right:0px;
+            height: 500px;
+            width: 555px;
+        }
+    
+        .content {
+            display: none;
+        }
+    
+        .content.active {
+            display: block;
+        }
+        nav {
+            background-color: lightgray;
+            padding: 25px;
+            text-align: right;
+        }
+        nav a{
+            font-size: larger;
+            color:blue;
+            padding: 5px;
+            text-decoration: none;
+            margin: 0 10px; 
+        }
+        #button{
+            padding: 20px;
+            background-color: red;
+            border-radius: 15px;
+            color:antiquewhite
+        }
+        body{
+            background-color:lightcyan;
+        }
+        .container{
+            width: 1000px;
+            height:fit-content;
+            position: relative;
+            left: 60px;
+            top:50px;
+            background:#F2F4FA;
+            margin: 0px 34.1667px 34.1667px;
+            padding: 6.83333px 27.3333px 27.3333px;
+        }
+        
+
+        #contactForm {
+            max-width: 600px;
+            margin: 0 auto;
+        border-radius: 15px;
+         box-shadow: 5px 5px 5px 5px rgba(0,0,0.1);
+            padding: 20px; /* Add padding for better aesthetics */
+            position: relative;
+            top:100px;
+            
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        input,
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        video {
+            width: 300px;
+            height: 200px;
+        }
+
+        .video-container {
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 100%;
+            height:fit-content;
+            /* Adjust the maximum width as needed */
+            margin: 0 auto;
+        }
+
+        .video {
+            width: 30%;
+        }
+    </style>
+    
+
+</head>
+<body>
+
+    <header>
+        <strong><h1>RIYA SOFTWARE SOLUTIONS</h1></strong>
+    </header>
+
+    <nav>
+        <strong><a href="#"onclick="showcontent('title1')">Home</a></strong>
+        <strong><a href="#"onclick="showcontent('title2')">About</a></strong>
+        <strong><a href="#"onclick="showcontent('title3')">Services</a></strong>
+        <strong><a href="#"onclick="showcontent('title4')">Blog</a></strong>
+        <strong><a href="#"onclick="showcontent('title5')">Contact</a></strong>
+    </nav>
+<div id="title1"class="content active">
+    <section id="home">
+        <img src="img.png">
+
+        <strong><h1 style="font-size:50px;">Teaching in the Internet <br>age means we must<br> teach tomorrow’s skills<br> today.</h1></strong>
+        <p>The cyber-era has got countless applications in the real time world that require master skills<br> of professionals to meet the population's demand. Academor keeps this as its meaning <br>and provides a platform for such enthusiasts and with well defined planning structure<br> to enable its users enjoy the whole path to learning.</p>
+<button id="button">EXPLORE MORE</button>
+    
+    
+    </section></div>
+    
+    <div id="title2"class="content">
+        <div class="container">
+    <section id="about">
+       <strong> <h1 style="text-align: center; color: red;font-size:40px;">Welcome to Riya Software Solutions – Your Gateway to Digital Education Excellence!</h1></strong>
+       <p style="font-size:20px;">At Riya Software Solutions, we are dedicated to revolutionizing education in the digital age. Our mission is to empower learners with the skills and knowledge they need to thrive in tomorrow's world. With a focus on innovation, technology, and personalized learning experiences, Riya Software Solutions stands at the forefront of educational transformation.We envision a future where education transcends boundaries, where learners are not just consumers of information but active participants in their educational journey. 
+        <strong> <h2 style= "color: red;">MISSION</h2></strong>
+        <p style="font-size:20px;">Our mission is to transform minds through expert-led internships and foster growth for a brighter tomorrow.</p>
+        <strong> <h2 style= "color: red;">VISION</h2></strong>
+        <p style="font-size: 20px;">We want to push the students into the "plus Ultra" phase, taking advantage of their knowledge and passion for their field to push them even farther. "Tell me and I forget. Teach me and I remember. Involve me and I learn". A quote by Benjamin Franklin, And that's what Academor does—we expose our students to the industry world so they can learn about it.</p>
+        <strong><h6 style="font-size: 25px;border: 2px solid cadetblue;padding: 10px;display: inline-block;">Our Vision : Enabling Future Leaders, One Byte at a Time.</h6></strong>
+
+        
+    </section></div> </div>
+    <div id="title3" class="content">
+
+        <section id="services">
+            <h1 style="text-align: center;font-size: 30px;color: blue;">START EXPLORING</h1>
+            <h2 style="text-decoration: underline;color: red;">Courses we provide:</h2>
+            <div class="video-container">
+                <div class="video">
+                    <h3>PYTHON</h3>
+                    <video controls>
+                        <source src="C:\Users\RANISH\Music\srp\myvideo\WIN_20231212_00_46_19_Pro.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <h3>C++</h3>
+                    <video controls>
+                        <source src="myvideo/WIN_20231212_01_17_35_Pro.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <h3>Javascript</h3>
+                    <video controls>
+                        <source src="C:\Users\RANISH\Music\srp\myvideo\video.mp4" type="video/mp4">
+                        <video src="C:\Users\RANISH\Music\srp\myvideo\video.mp4/video.mp4" controls></video>
+                    </video>
+                </div>
+            </div>
+            <button style="position: relative;left:500px;top:15px;background-color: red;color:antiquewhite;padding:15px;border-radius: 15px;">SUBSCIBE TO WATCH MORE</button>
+        </section>
+    </div>
+<div id="title4"class="content">
+    <section id="blog">
+       <strong> <p style="font-family: 'Proxima Nova', sans-serif; font-size: 100px;">Coming Soon! </p></strong>
+       
+       <p>We're working hard to bring you a platform to hire the best talent effortlessly. Stay tuned for updates!</p>
+    </section>
+</div>
+<div id="title5"class="content">
+    <section id="contact">
+       
+        <form id="contactForm" action="/submitForm" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="time">Time to Contact:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    </div>
+<script>
+function showcontent(topicId){
+    const allcontent=document.querySelectorAll('.content');
+    for(let i=0;i<allcontent.length;i++){
+        allcontent[i].classList.remove('active');
+    }
+    const selected=document.getElementById(topicId);
+    selected.classList.add('active');
+}
+</script>
+</body>
+</html>
